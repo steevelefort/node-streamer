@@ -2,6 +2,8 @@
 
 > HTTP-Streaming for Node.js
 
+[![Build Status](https://travis-ci.org/GregoryPevnev/node-streamer.svg?branch=master)](https://travis-ci.org/GregoryPevnev/node-streamer)
+
 #### A simple lightweight Express-Middleware that serves static content by [Streaming](https://en.wikipedia.org/wiki/HTTP_Live_Streaming)
 
 ## Set Up
