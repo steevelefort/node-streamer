@@ -1,12 +1,27 @@
 {
     "name": "node-http-streamer",
-    "version": "1.0.1",
-    "description": "",
+    "version": "1.0.2",
+    "description": "A Node.js implementation of HTTP-Streaming for serving static Media-Content as an Express Middleware",
     "main": "index.js",
+    "keywords": [
+        "HTTP",
+        "Streaming",
+        "Stream",
+        "Media",
+        "Express",
+        "Middleware",
+        "Static-Content",
+        "Audio",
+        "Video",
+        "HTTP-Streaming",
+        "Range",
+        "Content-Range",
+        "Accept-Ranges"
+    ],
     "scripts": {
         "test": "jest"
     },
-    "author": "",
+    "author": "Gregory Pevnev",
     "license": "ISC",
     "dependencies": {
         "mimetype": "0.0.8"
