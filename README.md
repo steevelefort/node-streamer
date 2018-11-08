@@ -34,3 +34,8 @@ const app = express();
 // Stream all contents of directory "video" at path "/stream"
 app.use("/stream", streamer(path.join(__dirname, "video")));
 ```
+
+#### Links
+Github: https://github.com/GregoryPevnev/node-streamer
+NPM: https://www.npmjs.com/package/node-http-streamer
+
