@@ -1,6 +1,6 @@
 {
     "name": "node-http-streamer",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "A Node.js implementation of HTTP-Streaming for serving static Media-Content as an Express Middleware",
     "main": "index.js",
     "keywords": [
