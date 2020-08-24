@@ -1,7 +1,7 @@
 const createStreamer = require("./src/middleware");
 
-module.exports = dirPath => {
-    if (typeof dirPath !== "string")
-        throw new Error("A directory-path must be provided");
-    return createStreamer(dirPath);
+module.exports = filePath => {
+    if (typeof filePath !== "string")
+        throw new Error("A file-path must be provided");
+    return createStreamer(filePath);
 };

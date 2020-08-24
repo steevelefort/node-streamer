@@ -11,7 +11,7 @@
 ### Installation
 
 ```sh
-$ npm install node-http-streamer
+$ npm install git@github.com:steevelefort/node-streamer.git
 ```
 
 ### Import
@@ -25,17 +25,13 @@ const streamer = require("node-http-streamer");
 > Just provide a path to a directory with media files for streaming(Video, Audio, etc).
 
 ```javascript
-const express = require("express");
-const path = require("path");
 const streamer = require("node-http-streamer");
 
-const app = express();
-
-// Stream all contents of directory "video" at path "/stream"
-app.use("/stream", streamer(path.join(__dirname, "video")));
+const streamMiddleware = streamer(pathToVideo);
+streamMiddleware(res,req)
 ```
 
-#### Links
+#### Forked from 
 Github: https://github.com/GregoryPevnev/node-streamer
 NPM: https://www.npmjs.com/package/node-http-streamer
 

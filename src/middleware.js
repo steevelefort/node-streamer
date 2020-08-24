@@ -4,14 +4,14 @@ const reader = require("./reader");
 const utils = require("./utils");
 const { RANGE_TYPE } = require("./constants");
 
-module.exports = dirPath => async (req, res) => {
+module.exports = filePath => async (req, res) => {
     const range = utils.getRange(req.headers["range"]);
-    const filename = path.join(dirPath, req.path);
-    const result = await reader.readFile(filename, range);
+    // const filename = path.join(dirPath, req.path);
+    const result = await reader.readFile(filePath, range);
 
     if (result === null) return res.status(404).send();
 
-    res.header("Content-Type", mime.lookup(filename));
+    res.header("Content-Type", mime.lookup(filePath));
     if (range)
         res.writeHead(206, {
             "Content-Length": result.contentSize,
